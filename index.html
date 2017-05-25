@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto Blend</title>
+	<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+	<link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+	<script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+
+ 
+    <!-- Load ScrollTo -->
+    <script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+ 
+    <!-- Load LocalScroll -->
+    <script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+
+
+	<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+
+
+
+	<script>
+		$(document).ready(function() {
+  			$("#localizacaoScroll").on("click", function( e ) {
+
+    		e.preventDefault();
+
+    		$("body, html").animate({ 
+     		 scrollTop: $( $(this).attr('href') ).offset().top 
+    		}, 600);
+
+  });
+});
+
+	</script>
+
+</head>
+<body>
+
+	<header class="navbar navbar-fixed-top navbar-inverse header-transparente header-area">
+		
+		<div class="container">	
+
+			<div class="header">
+
+				<!--botão toggle-->
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+		        <span class="sr-only">alternar navegação</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+
+		        <a href="index.html" class="navbar-brand">
+				<span class="img-logo"></span>
+				</a>
+			</div>		
+
+			<div class="collapse navbar-collapse" id="barra-navegacao">
+	           <ul class="nav navbar-nav navbar-right">
+	            <li><a href="#ordemJedi" class="atalho">Ordem Jedi</a></li>
+	            <li><a href="#rebeldes" class="atalho">Rebeldes</a></li>
+	            <li><a href="#resistencia" class="atalho">Resistencia</a></li>
+	            <li><a href="#imperio" class="atalho">Império</a></li>
+	            <li><a href="#sith" class="atalho">Sith</a></li>
+	            <li><a href="#primeiraOrdem" class="atalho">Primeira Ordem</a></li>
+	          </ul>
+	        </div>
+	    </div>   
+	</header>        
+
+	<div class="localizacaoScroll">
+		<a href="#ordemJedi"></a>
+		<a href="#rebeldes"></a>
+		<a href="#resistencia"></a>
+		<a href="#imperio"></a>
+		<a href="#sith"></a>
+		<a href="#primeiraOrdem"></a>
+	</div>
+
+	<section class="area-principal border">
+		<div class="container">
+			
+				<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Ordem Jedi</h2>
+					<br/>
+				</div>	
+					 <div class="owl-carousel owl-theme localizacaoScroll " id="ordemJedi">
+					    <div class="item" ><a href="img/anakin.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Anakin Skywalker"><img src="img/anakin.png" class="lazy" alt=""></a></div>
+					    <div class="item"><a href="img/yoda.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Yoda"><img src="img/yoda.png" class="lazy" alt=""></a></div>
+						<div class="item"><a href="img/obi.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Obi Wan Kenobi"><img src="img/obi.png" class="lazy" alt=""></a></div>
+					    <div class="item"><a href="img/qgj.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Quin Gon Jinn"><img src="img/qgj.png" class="lazy" alt=""></a></div>
+					    <div class="item"><a href="img/luke.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Luke Skywalker"><img src="img/luke.png" class="lazy" alt=""></a></div>
+					</div>
+				</div>
+				
+		</div>
+	</section>
+
+	<section class="area-principal border">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Rebeldes</h2>
+					<br/>
+				</div>	
+
+				<div class="owl-carousel owl-theme localizacaoScroll" id="rebeldes" >
+				    <div class="item"><a href="img/leia.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Leia Ornaga"><img src="img/leia.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/han.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Han Solo"><img src="img/han.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/lando.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Lando Calrissian"><img src="img/lando.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/jyn.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Jyn Erso"><img src="img/jyn.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/chirrut.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Chirrut Imwe"><img src="img/chirrut.png" class="lazy" alt=""></a></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="area-principal border">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Resistência</h2>
+					<br/>
+				</div>	
+
+				<div class="owl-carousel owl-theme localizacaoScroll" id="resistencia">
+				    <div class="item"><a href="img/rey.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Rey"><img src="img/rey.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/finn.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Finn"><img src="img/finn.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/poe.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Poe Dameron"><img src="img/poe.png" class="lazy" alt=""></a></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="area-principal border">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Império</h2>
+					<br/>
+				</div>	
+
+				<div class="owl-carousel owl-theme localizacaoScroll" id="imperio" >
+					<div class="item"><a href="img/imp.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Imperador Palpatine"><img src="img/imp.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/tarkin.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Grand Moff Tarkin"><img src="img/tarkin.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/veers.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="General Veers"><img src="img/veers.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/pi.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Piloto Imperial"><img src="img/pi.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/tmorte.png" data-lightb="image-5" data-lightbox="roadtrip" data-title="Trooper da Morte"><img src="img/tmorte.png" class="lazy" alt=""></a></div>
+				</div>
+
+			</div>	
+		</div>
+	</section>
+
+	<section class="area-principal border">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Sith</h2>
+					<br/>
+				</div>	
+			
+				 <div class="owl-carousel owl-theme localizacaoScroll" id="sith">
+				    <div class="item"><a href="img/vader.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Darth Vader"><img src="img/vader.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/sidious.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Darth Sidious"><img src="img/sidious.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/maul.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Darth Maul"><img src="img/maul.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/dookan.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Conde Dookan"><img src="img/dookan.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/dn.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Darth Nihilus"><img src="img/dn.png" class="lazy" alt=""></a></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="area-principal border">
+		<div class="container">
+			<div class="col-md-12">
+				<div class="centralizacao">
+					<h2>Primeira Ordem</h2>
+					<br/>
+				</div>	
+
+				 <div class="owl-carousel owl-theme localizacaoScroll" id="primeiraOrdem" >
+				    <div class="item"><a href="img/kylo.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Kylo Ren"><img src="img/kylo.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/c.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Captain Phasma"><img src="img/c.png" class="lazy" alt=""></a></div>
+					<div class="item"><a href="img/ppo.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Piloto Primeira Orderm"><img src="img/ppo.png" class="lazy" alt=""></a></div>
+				    <div class="item"><a href="img/stpo.png" data-lightbox="image-5" data-lightbox="roadtrip" data-title="Stormtrooper Primeira Ordem"><img src="img/stpo.png" class="lazy" alt=""></a></div>
+				</div>
+
+			</div>	
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+		<div class="row"><h3>Siga Star Wars:</h3></div>
+			<div class="nav">
+          		<ul>
+            	<li class="item-rede-social"><a href="https://www.facebook.com/StarWars"><img src="img/social/fc.png"></a></li>
+            	<li class="item-rede-social"><a href="https://twitter.com/starwars"><img src="img/social/twt.png"></a></li>
+            	<li class="item-rede-social"><a href="http://www.youtube.com/user/starwars"><img src="img/social/yt.png"></a></li>
+         	 	</ul>
+         	</div>
+        </div>	 
+	</footer>
+	
+	<script>
+
+		$(document).ready(function(){
+
+			$("img.lazy").lazyload();
+
+			$('.owl-carousel').owlCarousel({
+			    loop:true, 
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			});
+
+			lightbox.option({
+		      'resizeDuration': 200,
+		      'wrapAround': true
+		    })
+		});
+
+		$('a.atalho[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - 150
+					}, 1000);
+					return false;
+				}
+			}
+		});
+
+	</script>
+
+</body>
+</html>

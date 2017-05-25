@@ -1,0 +1,74 @@
+body{
+  background: url('img/bg.png');
+  background-attachment: fixed;
+}
+
+header.header-transparente
+ {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  top: 0;
+}
+header.header-area {
+  margin: 0 auto;
+}
+
+section.area-principal {
+  width: auto;
+  margin-top:110px;
+}
+
+footer{
+  background: url('img/footerImg.png') no-repeat;
+  padding: 30px 50px 0px 0px;
+  position: relative;
+}
+
+.img-logo
+{
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url('img/swLogo1.png') no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+
+.navbar-brand
+{
+  padding: 5px 15px;
+}
+
+.capa
+{
+  display: table;
+  width: 100%
+}
+
+
+.centralizacao{
+  text-align: center;
+  color: white;
+}
+
+.item {
+  margin:2px;
+}
+
+.border{
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+.item-rede-social
+{
+  align-items: center;
+  list-style-type:none;
+  display:inline-block;
+}
